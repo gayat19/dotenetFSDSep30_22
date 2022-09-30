@@ -1,0 +1,141 @@
+https://codeshare.io/G3
+
+https://github.com/gayat19/dotenetFSDSep30_22.git
+
+Dotnet
+VS -> VB&VC++
+Java
+  Platform Ind
+  Free
+  Web Development
+Y2K
+year 2000
+30-09-00
+
+C# ->
+.NET - Tech
+  J#
+  VC++.NET
+  VB.NET
+  C#
+
+
+Iteroperability-> Inter Operational Ability
+
+
+Statements
+   Sequence
+   Selection - If, If-Else, If-Else-If, Switch
+   Iteration - for, foreach, while, do-While
+
+
+if (false)
+            {
+                Console.WriteLine("Line 2");
+            }
+            else
+                Console.WriteLine("Line for else");
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("The value of i is"+i);
+            }
+            int num = 10;
+            while(true)
+            {
+                if (num > 15)
+                    break;
+                Console.WriteLine(num);
+                num++;
+            }
+-----------------------
+ Console.WriteLine("Hello World");
+            string name;
+            Console.WriteLine("Please enter you name");
+            name = Console.ReadLine();
+            if(name == "Gayathri")
+                Console.WriteLine("Welcome "+name);
+            else
+                Console.WriteLine("I dont know who u are");
+            //Console.WriteLine("Welcome {0}",name);
+            Console.ReadKey();
+
+
+OOPS
+   Class
+   Object
+   Inheritance
+   Encapsulation
+   Polymorphism - -Static & Dynamic
+   Abstraction
+
+Create class - Customer -Id,Name,Age,Phone
+
+public, private,protected, internal, protected internal, private protected
+
+Static Polymorphism - Overloading - contructor, method, indexers, operator
+    Number,order,datatype
+     
+
+Inheritance
+   Single/Simple - One base class & and derived class
+   Multi Level - Base class->derived class -> derived class
+   Hyrar - One base class -> Many derived class
+
+
+
+//Customer customer = new Customer()
+            //{
+            //    Id = 1,
+            //    Name="Ramu",
+            //    Age=22,
+            //    Phone="1234567890"
+            //};
+            //Customer goldCustomer = new GoldCustomer()
+            //{
+            //    Id = 2,
+            //    Name="Somu",
+            //    Age =24,
+            //    Phone="9876543210",
+            //    ReffPoints=20
+            //};
+            ////customer.PrintCustomerDetails();
+            //goldCustomer.PrintCustomerDetails();
+
+Create a program that takes 3 customer details and print the same
+
+Customer[] customers = new Customer[3];
+            for (int i = 0; i < 3; i++)
+            {
+                customers[i] = new Customer();
+                customers[i].Id = 100 + i + 1;
+                Console.WriteLine("Please enter the customer name");
+                customers[i].Name = Console.ReadLine();
+                Console.WriteLine("Please enter the customer age");
+                customers[i].Age = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter the customer Phone");
+                customers[i].Phone = Console.ReadLine();
+            }
+            foreach (Customer item in customers)
+            {
+                item.PrintCustomerDetails();
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

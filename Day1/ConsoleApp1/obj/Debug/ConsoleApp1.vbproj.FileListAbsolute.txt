@@ -1,0 +1,12 @@
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\bin\Debug\ConsoleApp1.xml
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.AssemblyReference.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.SuggestedBindingRedirects.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.Resources.resources
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.GenerateResource.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.vbproj.CoreCompileInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.xml
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

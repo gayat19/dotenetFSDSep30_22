@@ -1,0 +1,8 @@
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\bin\Debug\FirstApp.exe.config
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\bin\Debug\FirstApp.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\bin\Debug\FirstApp.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\obj\Debug\FirstApp.csproj.AssemblyReference.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\obj\Debug\FirstApp.csproj.SuggestedBindingRedirects.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\obj\Debug\FirstApp.csproj.CoreCompileInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\obj\Debug\FirstApp.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\FirstApp\obj\Debug\FirstApp.pdb

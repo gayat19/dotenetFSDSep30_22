@@ -1,0 +1,8 @@
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\bin\Debug\SampelCSharpApp.exe.config
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\bin\Debug\SampelCSharpApp.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\bin\Debug\SampelCSharpApp.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\obj\Debug\SampelCSharpApp.csproj.AssemblyReference.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\obj\Debug\SampelCSharpApp.csproj.SuggestedBindingRedirects.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\obj\Debug\SampelCSharpApp.csproj.CoreCompileInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\obj\Debug\SampelCSharpApp.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day1\SampelCSharpApp\obj\Debug\SampelCSharpApp.pdb
