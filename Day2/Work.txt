@@ -1,0 +1,83 @@
+Create a new project
+Create a class in the project for teh following
+
+Pizza
+Properties
+  Id
+  Name
+  Price
+  Type
+  IsVeg
+  Pic
+  Description
+
+Method
+  Constructor -
+		Default
+		Parameterized
+  TakePizzaDetails
+  PrintDetails
+
+Creating a Class Lib and reffer a lib
+Override the ToString methods
+Collection - List+Dic
+
+CRUD - Create Read Update Delete
+
+Interface
+Repo Design Pattern
+
+Exception
+
+
+
+
+/Pizza[] pizzas = new Pizza[3];
+        //ArrayList pizzas = new ArrayList();
+        //List<Pizza> pizzas = new List<Pizza>();//Type safe collection
+        //List<Pizza> pizzas = new List<Pizza>()
+        //{
+        //    new Pizza(){Id=102,Name="Abc",Price=123.4f},
+        //    new Pizza(){Id=101,Name="AAb",Price=233.4f}
+        //};
+        void AddPizzas()
+        {
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    pizzas.Add(new Pizza());
+            //    //pizzas[i] = new Pizza();
+
+            //    // ((Pizza)pizzas[i]).TakePizzaDetails();
+            //    pizzas[i].TakePizzaDetails();
+            //}
+            string choice = "No";
+            do
+            {
+                Pizza pizza = new Pizza();
+                pizza.TakePizzaDetails();
+                pizzas.Add(pizza);
+                Console.WriteLine("Do you want to enter one more pizza detail??");
+                choice = Console.ReadLine().ToUpper();
+            } while (choice != "NO");
+        }
+        void PinrtPizzas()
+        {
+            pizzas.Sort();
+            foreach (var item in pizzas)
+            {
+                Console.WriteLine(item);
+                Console.WriteLine("-------------------------");
+            }
+        }
+        static void Main(string[] args)
+        {
+            Program program = new Program();
+            //program.AddPizzas();
+            program.PinrtPizzas();
+            Console.ReadKey();
+        }
+
+
+
+  

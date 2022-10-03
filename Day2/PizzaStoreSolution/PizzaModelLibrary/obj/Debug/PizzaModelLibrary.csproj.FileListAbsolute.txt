@@ -1,0 +1,6 @@
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day2\PizzaStoreSolution\PizzaModelLibrary\bin\Debug\PizzaModelLibrary.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day2\PizzaStoreSolution\PizzaModelLibrary\bin\Debug\PizzaModelLibrary.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day2\PizzaStoreSolution\PizzaModelLibrary\obj\Debug\PizzaModelLibrary.csproj.AssemblyReference.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day2\PizzaStoreSolution\PizzaModelLibrary\obj\Debug\PizzaModelLibrary.csproj.CoreCompileInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day2\PizzaStoreSolution\PizzaModelLibrary\obj\Debug\PizzaModelLibrary.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day2\PizzaStoreSolution\PizzaModelLibrary\obj\Debug\PizzaModelLibrary.pdb
