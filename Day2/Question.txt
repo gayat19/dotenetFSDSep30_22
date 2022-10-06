@@ -1,0 +1,6 @@
+1) Add Login feature to the existing application
+
+Hints -
+  Add a User class to the modle Library
+  Add the USerCheck class to the BL library
+  Add the login functionality before siplating the menu for purchase

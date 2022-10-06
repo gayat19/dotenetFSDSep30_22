@@ -9,10 +9,16 @@ namespace PizzaStoreBL
 {
     public class PizzaStore
     {
-        Repository repository;
+        //Repository repository;
+        private readonly IRepo repository;
+
         public PizzaStore()
         {
-            repository = new Repository();
+            //repository = new Repository();
+        }
+        public PizzaStore(IRepo repo)
+        {
+            repository = repo;
         }
         public void AddPizzaStock()
         {

@@ -28,15 +28,22 @@ namespace PizzaStoreBL
 
         public Pizza Get(int id)
         {
-            Pizza pizza = null;
-            for (int i = 0; i < pizzas.Count; i++)
-            {
-                if(pizzas[i].Id == id)
-                {
-                    pizza = pizzas[i];
-                    break;
-                }
-            }
+            //Pizza pizza = null;
+            //for (int i = 0; i < pizzas.Count; i++)
+            //{
+            //    if(pizzas[i].Id == id)
+            //    {
+            //        pizza = pizzas[i];
+            //        break;
+            //    }
+            //}
+            //Predicate<Pizza> findPizza = (p) => p.Id == id;
+            //Pizza pizza = pizzas.Find(findPizza);
+            // Pizza pizza = pizzas.Find((p) => p.Id == id);
+            //select * from pizzas where id=101
+            //var pizza = (from item in pizzas where item.Id == id select item).ToList();
+            // return pizza[0];
+            var pizza = pizzas.FirstOrDefault(p => p.Id == id);
             return pizza;
         }
 
@@ -63,5 +70,7 @@ namespace PizzaStoreBL
             }
             return myPizza;
         }
+
+        
     }
 }

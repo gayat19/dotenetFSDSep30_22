@@ -1,0 +1,38 @@
+SOLID
+ S - Single Responsibility
+ O - Open and Closed
+ L - Liskov Substitution
+ I - Interface Segreation
+ D - Dependency Inversion
+
+https://github.com/FortuneN/FineCodeCoverage/releases
+
+
+Design Patterns - Creational:  Singleton, Factory, Abstract Factory
+Design Patterns - Structural:  Adapter, Decorator, Bridge, Façade
+Design Patterns - Behavioral:  Chain of Responsibility,   Mediator, Observer
+
+
+ public sealed class Connection
+    {
+        private static Connection instance = null;
+        public string name = "";
+        private Connection()
+        {
+        }
+        public static Connection Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Connection();
+                }
+                return instance;
+            }
+        }
+    }
+Connection con = Connection.Instance;
+            con.name = "G3";
+            Connection con2 = Connection.Instance;
+            Console.WriteLine(con2.name);

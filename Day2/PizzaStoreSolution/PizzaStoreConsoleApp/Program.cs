@@ -10,20 +10,83 @@ using PizzaStoreBL;
 
 namespace PizzaStoreConsoleApp
 {
-    internal class Program
+    internal partial class Program
     {
         PizzaStore pizzaStore;
         Cart cart;
+        //public delegate void MyDelegateType(int n1, int n2);//Creating a ref type
+        //public delegate void MyDelegateFloatType(float n1, float n2);//Creating a ref type
+        //public delegate void MyDelegateType<T>(T n1, T n2);//Generalize the declaration
+        //MyDelegateType<int> myDelegate;//Create reff with specific types
+        //MyDelegateType<float> myFloatDelegate;
+        //MyDelegateType<string> myStringDelegate;
+        Action<int, int> myDelegate;
+        Action<float, float> myFloatDelegate;
+        Action<string, string> myStringDelegate;
+        void Add(int num1,int num2)
+        {
+            int sum = num1 + num2;
+            Console.WriteLine("The sum is "+sum);
+        }
+        void Product(int num1, int num2)
+        {
+            int sum = num1 * num2;
+            Console.WriteLine("The product is " + sum);
+        }
+        void ProductFloat(float num1, float num2)
+        {
+            float sum = num1 * num2;
+            Console.WriteLine("The product is " + sum);
+        }
+        void UseDelegate()
+        {
+            //myDelegate = new MyDelegateType<int>(Add);
+            myDelegate = new Action<int, int>(Add);
+            myDelegate += Product;
+            //myFloatDelegate = new MyDelegateType<float>(ProductFloat);
+            myFloatDelegate = new Action<float,float>(ProductFloat);
+            //Annon method - can be used with delegate for invocation
+            //myStringDelegate += delegate (string s1, string s2)
+            //{
+            //    Console.WriteLine(s1 + " " + s2);
+            //};
+            //myStringDelegate =(s1,s2) =>
+            //{
+            //    Console.WriteLine(s1 + " " + s2);
+            //};
+            myStringDelegate = (s1, s2) => Console.WriteLine(s1 + " " + s2);
+        }
         public Program()
         {
-            pizzaStore = new PizzaStore();
+            //Repository repository = new Repository();
+            DBRepository repository = new DBRepository();
+            pizzaStore = new PizzaStore(repository);
             cart = new Cart();
         }
         static void Main(string[] args)
         {
-            Program program = new Program();
-            program.InitializeStore();
-            program.Shop();
+            //Program program = new Program();
+            //program.InitializeStore();
+            //program.Shop();
+            //program.UseDelegate();
+            //program.myStringDelegate("Hello","World");
+            //program.myFloatDelegate(10.2f,34.5f);
+            //program.myDelegate(10, 20);//Invoking the method using the delegate
+            //Action<int, int> myDelegate = (n1, n2) => Console.WriteLine("The sum is "+(n1+n2));
+            //myDelegate(10, 20);
+            //Func<int,int> myFunc = (num1) => num1+10;
+            //Console.WriteLine(myFunc(100));
+            //string name = Console.ReadLine();
+            //Predicate<string> check = (nm) => name.Length > 5;
+            //Console.WriteLine(check(name)); 
+           // int[] arr = { 90, 78, 89, 34, 98, 67 };
+            List<int> arr = new List<int>() { 90, 78, 89, 34, 98, 67 };
+            var scores = from n in arr where n > num1 select n;
+            //var scores = arr.Where(n => n > 70);
+            foreach (var item in scores)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadKey();
         }
 

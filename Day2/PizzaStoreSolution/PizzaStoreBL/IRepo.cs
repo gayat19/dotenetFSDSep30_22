@@ -16,5 +16,6 @@ namespace PizzaStoreBL
         Pizza Update(Pizza item);//Update
         Pizza Delete(int id);//Delete
 
+
     }
 }

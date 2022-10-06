@@ -1,0 +1,12 @@
+Delegate
+ Single/uni cast delegate
+ Multicast delegate
+
+ Genric delegates
+
+ Predefined delegates
+    Action(No return type), Func(any return type), Predicate(bool with one parameter)
+
+Create a model lib-> Doctor
+Create a repo pattern for CRUD on the doctor collection in another CLass Library
+Expose the fuctionality in the console app
