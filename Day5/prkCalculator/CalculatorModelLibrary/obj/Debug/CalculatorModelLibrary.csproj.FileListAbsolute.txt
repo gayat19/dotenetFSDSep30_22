@@ -1,0 +1,6 @@
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\CalculatorModelLibrary\bin\Debug\CalculatorModelLibrary.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\CalculatorModelLibrary\bin\Debug\CalculatorModelLibrary.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\CalculatorModelLibrary\obj\Debug\CalculatorModelLibrary.csproj.AssemblyReference.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\CalculatorModelLibrary\obj\Debug\CalculatorModelLibrary.csproj.CoreCompileInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\CalculatorModelLibrary\obj\Debug\CalculatorModelLibrary.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\CalculatorModelLibrary\obj\Debug\CalculatorModelLibrary.pdb

@@ -1,0 +1,11 @@
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\bin\Debug\prkCalculator.exe.config
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\bin\Debug\prkCalculator.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\bin\Debug\prkCalculator.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\bin\Debug\CalculatorModelLibrary.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\bin\Debug\CalculatorModelLibrary.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\obj\Debug\prjCalculator.csproj.AssemblyReference.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\obj\Debug\prjCalculator.csproj.SuggestedBindingRedirects.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\obj\Debug\prjCalculator.csproj.CoreCompileInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\obj\Debug\prjCalculator.csproj.CopyComplete
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\obj\Debug\prkCalculator.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day5\prkCalculator\prkCalculator\obj\Debug\prkCalculator.pdb
