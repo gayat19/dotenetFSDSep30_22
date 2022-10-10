@@ -8,15 +8,15 @@ namespace CalculatorModelLibrary
 {
     public class MyNumbers
     {
-        public double Number1 { get; set; }
-        public double Number2 { get; set; }
+        public virtual double Number1 { get; set; }
+        public virtual double Number2 { get; set; }
         public void TakeNumbers()
         {
             Number1 = TakeNumebr(1);
             Number2 = TakeNumebr(2);
         }
 
-        private double TakeNumebr(int v)
+        public double TakeNumebr(int v)
         {
             int number;
             Console.WriteLine("Please enter the {0} number",v);

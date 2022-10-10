@@ -1,0 +1,11 @@
+Create a console application with name prjCalculator
+
+Create a model calss with name MyNumbers with 2 properties
+   Number1 and Number2 as double
+
+Create an Interface with name ICalculate - methods
+			Add, Subract, Multipy, Divide all takingthe MyNumbers as parameter
+Implement the interface in a class and provide definition for the same
+
+In the progtam class take input for the numbers and call teh methods based opn customer choice
+hint(use loop and switch case)

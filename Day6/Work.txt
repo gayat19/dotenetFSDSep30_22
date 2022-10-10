@@ -1,0 +1,32 @@
+MVC
+
+
+check dotnet installation
+dotnet --version
+
+
+create folder
+navigate inside teh folder
+dotnet new console - creates a new console app
+dotnet build - compiles the app
+dotnet run - executes the application
+
+
+
+http://localhost:54332/<controllername>/<actionmethodname>
+
+View -> CS+Html => cshtml files
+
+Routing
+Static Pages
+Controller
+Views
+Models
+
+
+ViewBag
+ViewData
+
+Strongly Typed View
+
+

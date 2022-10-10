@@ -1,0 +1,15 @@
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\bin\Debug\net6.0\MyConsoleApp.exe
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\bin\Debug\net6.0\MyConsoleApp.deps.json
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\bin\Debug\net6.0\MyConsoleApp.runtimeconfig.json
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\bin\Debug\net6.0\MyConsoleApp.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\bin\Debug\net6.0\MyConsoleApp.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.csproj.AssemblyReference.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.AssemblyInfoInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.AssemblyInfo.cs
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.csproj.CoreCompileInputs.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\refint\MyConsoleApp.dll
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.pdb
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\MyConsoleApp.genruntimeconfig.cache
+E:\Corp\Skillwise\Hexaware\30Sep2022\Day6\MyConsoleApp\obj\Debug\net6.0\ref\MyConsoleApp.dll

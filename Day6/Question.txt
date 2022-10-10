@@ -1,0 +1,5 @@
+Create a new MVC application
+  Create a controller - Student
+  Create a Model - Student
+  Create action methods and view for viewing one Student detail - witha  strongly typed view
+  Explore how to create a view that will show a list of students

@@ -1,13 +1,14 @@
 ﻿using CalculatorModelLibrary;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace prjCalculator
 {
-    internal class Program
+    public class Program
     {
         MyNumbers numbers;
         Calculator calculator;
@@ -16,6 +17,35 @@ namespace prjCalculator
             numbers = new MyNumbers();
             calculator = new Calculator();
         }
+        public Program(MyNumbers _numbers,Calculator _calculator)
+        {
+            numbers = _numbers;
+            calculator = _calculator;
+        }
+        public bool Calculate(int choice)
+        {
+            bool status = false;
+            switch (choice)
+            {
+                case 1:
+                    //numbers.TakeNumbers();
+                    double result = calculator.Add(numbers);
+                    PrintResult("Addision", result);
+                    status = true;
+                    break;
+                case 2:
+                    //numbers.TakeNumbers();
+                    double result1 = calculator.Divide(numbers);
+                    PrintResult("Division", result1);
+                    status = true;
+                    break;
+                default:
+                    Console.WriteLine("Invalid option. Try again. If you wish to exit enter 0");
+                    break;
+            }
+            return status;
+        }
+        [ExcludeFromCodeCoverage]
         public void ImplementCalculation()
         {
             int choice;
@@ -26,40 +56,25 @@ namespace prjCalculator
                 {
                     Console.WriteLine("Invalid entry");
                 }
-                
-                switch (choice)
-                {
-                    case 1:
-                        numbers.TakeNumbers();
-                        double result = calculator.Add(numbers);
-                        PrintResult("Addision", result);
-                        break;
-                    case 2:
-                        numbers.TakeNumbers();
-                        double result1 = calculator.Divide(numbers);
-                        PrintResult("Division", result1);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid option. Try again. If you wish to exit enter 0");
-                        break;
-                }
+
+                Calculate(choice);
             } while (choice!=0);
 
         }
-
+        [ExcludeFromCodeCoverage]
         private void PrintResult(string v, double result)
         {
             Console.WriteLine(numbers);
             Console.WriteLine(" The "+v+" has resulted in "+result);
         }
-
+        [ExcludeFromCodeCoverage]
         private void PrintMenu()
         {
             Console.WriteLine("0. Exit");
             Console.WriteLine("1. Add");
             Console.WriteLine("2. Divide");
         }
-
+        [ExcludeFromCodeCoverage]
         static void Main(string[] args)
         {
             new Program().ImplementCalculation();
