@@ -1,0 +1,14 @@
+﻿@model FirstWebApp.Models.Employee
+
+<h1>Employee details</h1>
+<div>
+    Employee Id : @Model.Id
+    <br/>
+    Employee Name : @Model.Name
+    <br/>
+    Employee Age : @Model.Age
+    <br/>
+    @using(Html.BeginForm("Delete","Employee",FormMethod.Post)){
+    <button  class="btn btn-danger">Delete Employee</button>
+    }
+</div>

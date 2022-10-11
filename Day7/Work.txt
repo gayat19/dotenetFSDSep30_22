@@ -1,0 +1,9 @@
+Create
+  Get - Gets data/page from the server
+  Post - Sends Data to the server
+
+Edit
+  Get - Should a parameter of the Id for editing
+  POst - You will get back the edited details and save it
+
+Get, Post, FirstOrDefault - LINQ, Collections Edit

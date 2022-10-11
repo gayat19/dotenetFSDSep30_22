@@ -1,0 +1,25 @@
+﻿@model FirstWebApp.Models.Employee
+
+<h2>Create Employee</h2>
+@using(Html.BeginForm("Create","Employee",FormMethod.Post)){
+    <table>
+        <tr>
+            <td>Employee ID</td>
+            <td>@Html.EditorFor(m=>m.Id)</td>
+        </tr>
+         <tr>
+            <td>Employee Name</td>
+            <td>@Html.EditorFor(m=>m.Name)</td>
+        </tr>
+         <tr>
+            <td>Employee Age</td>
+            <td>@Html.EditorFor(m=>m.Age)</td>
+        </tr>
+         <tr>
+            <td colspan="2"><button class="btn btn-primary">Create Employee</button></td>
+        </tr>
+    </table>
+}
+<h2>
+    @ViewBag.Message
+</h2>
