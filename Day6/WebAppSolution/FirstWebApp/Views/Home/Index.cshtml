@@ -3,6 +3,9 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome @TempData.Peek("username")</h1>
+    @*Reading will remove it from tempdata*@
+@*    <h1 class="display-4">Welcome @TempData["username"]</h1>*@
+<h1 class="display-4">Welcome @ViewBag.Username</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

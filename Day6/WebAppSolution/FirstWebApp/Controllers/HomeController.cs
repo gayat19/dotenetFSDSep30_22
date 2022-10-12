@@ -15,7 +15,18 @@ namespace FirstWebApp.Controllers
 
         public IActionResult Index()
         {
-            //throw new NotImplementedException();
+            try
+            {
+                string username = HttpContext.Session.GetString("username");
+                if (username == null)
+                    return RedirectToAction("Login", "User");
+                ViewBag.Username = username;
+            }
+            catch (Exception)
+            {
+                return RedirectToAction("Login", "User");
+            }
+
             return View();
         }
 
