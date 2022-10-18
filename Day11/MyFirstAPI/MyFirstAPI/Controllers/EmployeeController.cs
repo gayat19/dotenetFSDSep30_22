@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyFirstAPI.Models;
 using MyFirstAPI.Services;
@@ -15,12 +16,14 @@ namespace MyFirstAPI.Controllers
         {
             _repo = repo;
         }
+
         [HttpPost]
         public ActionResult<Employee> Something(Employee employee)
         {
             var emp = _repo.Add(employee);
             return Created("", emp);
         }
+        [Authorize]
         [HttpGet]
         public ActionResult<ICollection<Employee>> GET()
         {

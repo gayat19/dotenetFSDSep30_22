@@ -20,17 +20,17 @@ namespace MyFirstAPI.Controllers
         public ActionResult Login(UserDTO  userDTO)
         {
             var result = _loginService.Login(userDTO);
-            if (result)
-                return Ok("Login success");
+            if (result != null)
+                return Ok(result);
             return BadRequest("Invalid username or password");
         }
         [HttpPost]
         [Route("Register")]
-        public ActionResult Register(User user)
+        public ActionResult Register(UserPassDTO user)
         {
             var result = _loginService.Register(user);
-            if (result)
-                return Ok("User Registered");
+            if(result != null)
+                return Ok(result);
             return BadRequest("Could not register user");
         }
 

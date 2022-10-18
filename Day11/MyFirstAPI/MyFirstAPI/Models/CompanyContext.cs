@@ -26,7 +26,7 @@ namespace MyFirstAPI.Models
                     Name="Ramu",
                     Salary=12345.54f,
                     DepartmentId=1,
-                    Username="ramu"
+                    Username=null
                 },
                   new Employee
                   {
@@ -37,16 +37,16 @@ namespace MyFirstAPI.Models
                       Username = null
                   }
                 );
-            modelBuilder.Entity<User>().HasData(
-                new User
-                {
-                    Username="ramu",
-                    Password="1234",
-                    Role="admin",
-                    Status="Active"
+            //modelBuilder.Entity<User>().HasData(
+            //    new User
+            //    {
+            //        Username="ramu",
+            //        Password="1234",
+            //        Role="admin",
+            //        Status="Active"
 
-                }
-                );
+            //    }
+            //    );
 
           
         }

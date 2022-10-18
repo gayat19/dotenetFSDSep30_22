@@ -4,7 +4,7 @@ namespace MyFirstAPI.Services
 {
     public interface ILoginService
     {
-        bool Login(UserDTO user);
-        bool Register(User user);
+        UserDTO Login(UserDTO user);
+        UserDTO Register(UserPassDTO user);
     }
 }
