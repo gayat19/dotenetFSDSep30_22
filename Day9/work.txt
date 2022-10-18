@@ -1,0 +1,52 @@
+PL -> Class, Properties, Object, Collection
+DB -> Table, Attributes, Data, Rows
+
+ORM -> Object Relation Mapping
+
+EF Core
+  Database First Approch
+  Code First Approch
+
+Connection: Application -> Databsae
+
+Data Source=DESKTOP-86CRKFR\SQLEXPRESS;user id=sa;password=P@ssw0rd;Initial Catalog=dbRecruitSep2022
+
+Data Source=DESKTOP-86CRKFR\SQLEXPRESS;Integrated Security=true;Initial Catalog=dbRecruitSep2022
+
+Data Source=<your server name>;Integrated Security=true;Initial Catalog=dbRecruitSep2022
+
+EntityFrameworkCore.SqlServer -> MS SQL server
+EntityFrameworkCore.Tools -> Migration + CLI 
+
+Scaffold-DbContext "Data Source=DESKTOP-86CRKFR\SQLEXPRESS;user id=sa;password=P@ssw0rd;Initial Catalog=dbRecruitSep2022" Microsoft.EntityFrameworkCore.SqlServer -O Models
+
+Scaffold-DbContext "<ConnectionString>" Microsoft.EntityFrameworkCore.SqlServer -O Models
+
+Fluent API
+
+Login/Register
+Service -> DbConetxt to conenct to database
+IRepo -> UserRepo -|> Repo will take conetxt as Injection
+IUSerService->UserService -> UserService will take Repo as Injection
+
+Controller -> Will get Injection of UserService
+
+
+Shift our connection string to the appseting 
+
+User Controller
+   Login to buythe pizza
+Pizza Controller
+  Index -> lIstthe pizza 
+            Buy button
+   			It sould show the pizza details
+  
+
+
+
+
+
+
+
+
+

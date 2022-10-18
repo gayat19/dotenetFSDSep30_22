@@ -1,0 +1,51 @@
+Partial View
+
+Web API
+  Similarities - WebAPI & MVC core
+  Diff - Web API vs MVC core
+  Postman - test
+  Open API testing - Swagger
+
+Logging & Sonar (For Code analysis)
+
+---------------------------------------
+
+Web API - BackEnd
+
+  API -
+    Communication
+	 BL
+	 Security
+
+http://<baseaddress>/<controllername>/<actionmethod>
+
+
+POST 		-> http://<baseaddress>/<controllername>	- Create
+GET 		-> http://<baseaddress>/<controllername>	- Read
+PUT 		-> http://<baseaddress>/<controllername>	- Update
+DELETE 	-> http://<baseaddress>/<controllername>	- Delete
+
+RESTful API -> 
+   Focus Resource insead of Method
+
+HTTP Status
+ 1XX	-> Info
+ 2XX	-> Success
+ 3XX	-> Redirection
+ 4XX	-> Client Side Error
+ 5XX	-> Server Side Error
+
+Client- Server Arch
+Chaching
+Standard -> Request & Response
+STateless -> HTTP protocol
+
+POST 		-> http://localhost:5936/api/Employee			- Create
+GET 		-> http://localhost:5936/api/Employee			- Read
+PUT 		-> http://localhost:5936/api/Employee			- Update
+DELETE 	-> http://localhost:5936/api/Employee/101 	- Delete
+
+
+curl -X GET http://localhost:5936/api/Employee -H 'accept: application/json'
+
+

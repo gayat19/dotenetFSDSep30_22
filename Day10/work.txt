@@ -1,0 +1,16 @@
+Customer
+  Id, Name, Phone
+
+Pizza
+  Id, Name, Price, Pic
+
+Order
+  OrderNo, CustId, Date, TotalAmount
+
+OrderDetails
+  OrderNo, PizzaId, Quantity
+-----------------------------------
+
+
+Add-Migration <migrationname>
+Update-Databse
