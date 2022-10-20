@@ -6,10 +6,12 @@ namespace MyFirstAPI.Services
     public class EmployeeDbRepo : IRepo<int, Employee>
     {
         private readonly CompanyContext _context;
+        private readonly ILogger<EmployeeDbRepo> _logger;
 
-        public EmployeeDbRepo(CompanyContext context)
+        public EmployeeDbRepo(CompanyContext context,ILogger<EmployeeDbRepo> logger)
         {
             _context = context;
+            _logger = logger;
         }
         public Employee Add(Employee item)
         {
@@ -21,7 +23,7 @@ namespace MyFirstAPI.Services
             }
             catch (Exception e)
             {
-                
+                _logger.LogError("Add method of employee "+e.Message);
             }
             return null;
         }
@@ -40,7 +42,6 @@ namespace MyFirstAPI.Services
                 catch (Exception e)
                 {
 
-                    throw;
                 }
             }
             return null;

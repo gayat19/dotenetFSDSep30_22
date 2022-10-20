@@ -1,0 +1,33 @@
+2022-10-19 09:53:42,508 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-10-19 09:53:42,530 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-10-19 09:53:42,532 [1] INFO Microsoft.Hosting.Lifetime - Content root path: E:\Corp\Skillwise\Hexaware\30Sep2022\Day11\MyFirstAPI\MyFirstAPI\
+2022-10-19 09:53:59,353 [.NET ThreadPool Worker] INFO MyFirstAPI.Controllers.UserController - Login Hit
+2022-10-19 09:54:00,540 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-10-19 09:54:01,411 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2022-10-19 09:54:01,508 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Username], [u].[Key], [u].[PasswordHash], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+2022-10-19 09:55:20,405 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-10-19 09:55:20,431 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-10-19 09:55:20,435 [1] INFO Microsoft.Hosting.Lifetime - Content root path: E:\Corp\Skillwise\Hexaware\30Sep2022\Day11\MyFirstAPI\MyFirstAPI\
+2022-10-19 09:55:27,263 [.NET ThreadPool Worker] INFO MyFirstAPI.Controllers.UserController - Login Hit
+2022-10-19 09:55:28,628 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-10-19 09:55:29,742 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (73ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2022-10-19 09:55:29,885 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Username], [u].[Key], [u].[PasswordHash], [u].[Role], [u].[Status]
+FROM [Users] AS [u]
+2022-10-19 09:57:21,020 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-10-19 09:57:21,040 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-10-19 09:57:21,042 [1] INFO Microsoft.Hosting.Lifetime - Content root path: E:\Corp\Skillwise\Hexaware\30Sep2022\Day11\MyFirstAPI\MyFirstAPI\
+2022-10-19 09:58:49,424 [.NET ThreadPool Worker] INFO MyFirstAPI.Controllers.UserController - Login Hit
+2022-10-19 09:58:50,736 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-10-19 09:58:51,677 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2022-10-19 09:58:51,786 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Username], [u].[Key], [u].[PasswordHash], [u].[Role], [u].[Status]
+FROM [Users] AS [u]

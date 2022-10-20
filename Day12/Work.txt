@@ -1,0 +1,8 @@
+Security
+  Password Encryption
+  Clear password from user
+    Encrypt the password
+  Compare with the encryted password stored in database
+
+
+  Authentication - JWT(Json Web Token)

@@ -4,6 +4,7 @@ namespace MyFirstAPI.Services
 {
     public class EmployeeRepo : IRepo<int, Employee>
     {
+        int num;
         static List<Employee> _employees = new List<Employee>()
         {
             new Employee{Id=101,Name="Ramu",Salary=12345.65f},

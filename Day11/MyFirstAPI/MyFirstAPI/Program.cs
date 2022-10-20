@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using MyFirstAPI.Models;
 using MyFirstAPI.Services;
 using System.Text;
+using Microsoft.Extensions.Logging.Log4Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +34,10 @@ builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<IRepo<int, Employee>, EmployeeDbRepo>();
 builder.Services.AddScoped<IRepo<string, User>, UserRepo>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddLogging(opts =>
+{
+    opts.AddLog4Net();
+});
 
 var app = builder.Build();
 
@@ -44,6 +49,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseHttpLogging();
 
 app.MapControllers();
 
