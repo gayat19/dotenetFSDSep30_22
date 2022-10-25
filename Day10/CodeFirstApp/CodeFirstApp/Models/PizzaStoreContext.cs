@@ -25,5 +25,6 @@ namespace CodeFirstApp.Models
             modelBuilder.Entity<OrderDetails>().HasKey(od => new { od.OrderId, od.PizzaId });
 
         }
+  
     }
 }
