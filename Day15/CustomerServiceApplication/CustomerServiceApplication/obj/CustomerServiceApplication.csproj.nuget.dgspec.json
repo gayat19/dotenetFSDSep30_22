@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Corp\\Cognixia\\Dotnet17Jan2022\\Participants\\Day21\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj": {}
+    "E:\\Corp\\Skillwise\\Hexaware\\30Sep2022\\Day15\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj": {}
   },
   "projects": {
-    "E:\\Corp\\Cognixia\\Dotnet17Jan2022\\Participants\\Day21\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj": {
+    "E:\\Corp\\Skillwise\\Hexaware\\30Sep2022\\Day15\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Corp\\Cognixia\\Dotnet17Jan2022\\Participants\\Day21\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj",
+        "projectUniqueName": "E:\\Corp\\Skillwise\\Hexaware\\30Sep2022\\Day15\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj",
         "projectName": "CustomerServiceApplication",
-        "projectPath": "E:\\Corp\\Cognixia\\Dotnet17Jan2022\\Participants\\Day21\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj",
+        "projectPath": "E:\\Corp\\Skillwise\\Hexaware\\30Sep2022\\Day15\\CustomerServiceApplication\\CustomerServiceApplication\\CustomerServiceApplication.csproj",
         "packagesPath": "C:\\Users\\gayat\\.nuget\\packages\\",
-        "outputPath": "E:\\Corp\\Cognixia\\Dotnet17Jan2022\\Participants\\Day21\\CustomerServiceApplication\\CustomerServiceApplication\\obj\\",
+        "outputPath": "E:\\Corp\\Skillwise\\Hexaware\\30Sep2022\\Day15\\CustomerServiceApplication\\CustomerServiceApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,33 @@
+https://nodejs.org/en/
+
+node --version
+
+npm --version
+
+npm install -g create-react-app  
+
+create-react-app <projectname>  <=> create-react-app firstapp
+
+https://code.visualstudio.com/
+
+cd <appname> <=> cd firstapp
+
+npm start
+
+In teh browser => http://localhost:3000
+
+Project
+Styling
+Components - function vs Class
+Iteration
+Condition
+Inter-Component Communication
+Routing
+Http Client -> GET,POST,PUT and DELETE
+
+
+
+Create a new react app
+Create a component(Class)
+Pass data from the parent and display
+Add styles as you wish

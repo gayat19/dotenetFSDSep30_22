@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyFirstAPI.Models;
 using MyFirstAPI.Services;
 
 namespace MyFirstAPI.Controllers
 {
+    [EnableCors("MyCors")]
     [Route("api/[controller]")]
     [ApiController]
+    
     public class UserController : ControllerBase
     {
         private readonly ILoginService _loginService;

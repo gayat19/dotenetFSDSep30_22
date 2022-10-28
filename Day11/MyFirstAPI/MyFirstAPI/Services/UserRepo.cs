@@ -18,7 +18,7 @@ namespace MyFirstAPI.Services
                 _context.SaveChanges();
                 return item;
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
                 throw;

@@ -1,0 +1,26 @@
+
+
+Project
+Styling
+Components - function vs Class
+Iteration
+Http Client -> GET,POST,PUT and DELETE
+Condition
+Inter-Component Communication
+  event
+Routing
+Validation
+
+  {/* <Employee ename="Somu" eage="22"/>
+     <Employee ename="Bimu" eage="31"/> */}
+      {/* <WeatherComponent 
+          wdate={weathers[0].date}
+          tc={weathers[0].temperatureC}
+          tf={weathers[0].temperatureF}
+          wsummary={weathers[0].summary} />
+      <WeatherComponent 
+          wdate={weathers[1].date}
+          tc={weathers[1].temperatureC}
+          tf={weathers[1].temperatureF}
+          wsummary={weathers[1].summary} /> */}
+

@@ -1,0 +1,62 @@
+
+
+Project
+Styling
+Components - function vs Class
+Iteration
+Http Client -> GET,POST,PUT and DELETE
+Condition
+Inter-Component Communication
+  event
+Routing
+Validation
+
+  {/* <Employee ename="Somu" eage="22"/>
+     <Employee ename="Bimu" eage="31"/> */}
+      {/* <WeatherComponent 
+          wdate={weathers[0].date}
+          tc={weathers[0].temperatureC}
+          tf={weathers[0].temperatureF}
+          wsummary={weathers[0].summary} />
+      <WeatherComponent 
+          wdate={weathers[1].date}
+          tc={weathers[1].temperatureC}
+          tf={weathers[1].temperatureF}
+          wsummary={weathers[1].summary} /> */}
+Iteration
+User Component
+  Form -> Respond to action(Event handling)
+
+Call to API
+[{
+  date:new Date(2022,9,28),
+  temperatureC:10,
+  temperatureF:30,
+  summary:"Something"
+},
+{
+  date:new Date(2022,9,27),
+  temperatureC:9,
+  temperatureF:27,
+  summary:"anything"
+}]
+
+WeatherComponent.js - function
+App -> WeatherArray -> Show the weaather using the component
+
+
+{
+  "username": "admin3", 
+  "role": "",
+  "status": "",
+  "password": "1234"
+}
+
+
+http://localhost:5936/api/User/Register
+
+
+
+
+
+
