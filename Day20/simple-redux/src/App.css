@@ -1,0 +1,8 @@
+.pizzalist{
+  width: 200px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  left:100px;
+}

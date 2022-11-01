@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import './AddUser.css';
 import {UserContext} from '../App';
 import {useContext} from 'react';
+import {useNavigate} from 'react-router-dom';
 
  function AddUser(props) {
     var [un,setUn]= useState('');
     var [pass,setPass]= useState('');
     const {username,setUsername} = useContext(UserContext);
+    const navigate = useNavigate();
     var changeUn =(event)=>{
        //console.log(event.target.value)
        setUn(event.target.value)
@@ -36,7 +38,18 @@ import {useContext} from 'react';
         var data = await response.json();
         console.log(data["username"]);
        // props.onRegister(data["username"])
-       setUsername(data["username"])
+       setUsername(data["username"]);
+       navigate('/count');
+    }
+    const checkPass=(event)=>{
+        let passVal = event.target.value;
+        if(passVal.length <3)
+        {
+            alert('Password has to be minimum 3 chars long')
+            event.target.value= '';
+            setPass('');
+        }
+            
     }
     return (
         <div className='userdiv'>
@@ -44,7 +57,7 @@ import {useContext} from 'react';
                 <label className='form-control'>Username</label>
                 <input className='form-control' onChange={changeUn} type="text" />
                 <label className='form-control'>Password</label>
-                <input className='form-control' type="password" onChange={changePass} />
+                <input className='form-control' type="password" onChange={changePass} onBlur={checkPass}/>
                 <button className='btn btn-success'>Register</button>
             </form>
         </div>

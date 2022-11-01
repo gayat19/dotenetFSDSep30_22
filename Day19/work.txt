@@ -1,0 +1,53 @@
+
+
+Project
+Styling
+Components - function vs Class
+Iteration
+Http Client -> GET,POST,PUT and DELETE
+   Pass the token -> JWT protected resource access
+Condition
+Inter-Component Communication
+  event
+  Context
+Routing
+   react-router-dom
+      BowserRouter
+		Routes
+		Route
+		Link	
+	
+Validation
+Redux
+
+
+Register->Weather
+Greet
+
+
+ {/* <div className="App">
+        <div>
+           The value of the counter is {counter}
+          <Counter onIncrement={incrementCounter}/>
+        </div>
+        {/* <Welcome un={username}/> */}
+        <Welcome />
+        <button className='btn btn-warning' onClick={getWeather}>Get Weather Data</button>
+        <AddUser onRegister={provideUsername}/>
+    
+        {weathers.map((weather)=>
+          <WeatherComponent 
+          key={Math.random()}
+          wdate={weather.date}
+          tc={weather.temperatureC}
+          tf={weather.temperatureF}
+          wsummary={weather.summary} />
+        )}
+      </div> */}
+
+
+Menu display -> constant -> navigate to diff pages
+Button click -> change the component
+
+
+

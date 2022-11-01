@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import React from 'react';
+import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+
 import './App.css';
 import Employee from './Components/Employee';
 import WeatherComponent from './Components/WeatherComponent';
@@ -36,29 +38,21 @@ const provideUsername=(event)=>{
   setUsername(event)
 }
   return (
+    <Router>
     <div>
     <UserContext.Provider value={{username,setUsername}}>
-      <div className="App">
-        <div>
-           The value of the counter is {counter}
-          <Counter onIncrement={incrementCounter}/>
-        </div>
-        {/* <Welcome un={username}/> */}
-        <Welcome />
-        <button className='btn btn-warning' onClick={getWeather}>Get Weather Data</button>
-        <AddUser onRegister={provideUsername}/>
-    
-        {weathers.map((weather)=>
-          <WeatherComponent 
-          key={Math.random()}
-          wdate={weather.date}
-          tc={weather.temperatureC}
-          tf={weather.temperatureF}
-          wsummary={weather.summary} />
-        )}
-      </div>
+      <ul>
+        <li><Link to="/" >Register</Link></li>
+        <li><Link to="greet">Greet</Link></li>
+      </ul>
+     <Routes>
+        <Route exact path="/" element={<AddUser onRegister={provideUsername}/>}></Route>
+        <Route exact path="/greet" element={<Welcome un={username}/>}></Route>
+        <Route exact path="/count" element={<Counter onIncrement={incrementCounter}/>}></Route>
+     </Routes>
     </UserContext.Provider>
     </div>
+    </Router>
   );
 }
 

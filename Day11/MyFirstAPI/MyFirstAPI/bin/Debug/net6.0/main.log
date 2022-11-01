@@ -304,3 +304,11 @@ VALUES (@p0, @p1, @p2, @p3, @p4);
 SET NOCOUNT ON;
 INSERT INTO [Users] ([Username], [Key], [PasswordHash], [Role], [Status])
 VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-10-31 10:07:04,923 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-10-31 10:07:04,967 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-10-31 10:07:04,969 [1] INFO Microsoft.Hosting.Lifetime - Content root path: E:\Corp\Skillwise\Hexaware\30Sep2022\Day11\MyFirstAPI\MyFirstAPI\
+2022-10-31 10:39:19,877 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-10-31 10:39:20,577 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (51ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 8000) (DbType = Binary), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Username], [Key], [PasswordHash], [Role], [Status])
+VALUES (@p0, @p1, @p2, @p3, @p4);

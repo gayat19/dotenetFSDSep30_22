@@ -1,0 +1,23 @@
+Redux - State Management
+  Global object - state - > Store
+
+SEPERATE PACKAGE
+Complex compared to Context
+
+
+Store -> Object are put
+State -> Objects are accessed - Readonly
+Reducers -> Methods that change the objet's state
+
+[
+	{
+		id:1,
+		name:"Pizza1",
+		price:200
+	},
+	{
+		id:2,
+		name:"Pizza2",
+		price:350
+	}
+]
