@@ -1,0 +1,15 @@
+Development
+OPeration
+
+DevOps
+
+  SCM ->git(LOcal Repo)-> GitHub/AWS Repo/Azure Repo
+    Collabration
+	 BackUp and work Delegation
+    Branching -> Satability and Extentio
+
+  CI/CD
+    Jenkins
+    AWS DevOps Service
+    Azure DevOps Service
+  

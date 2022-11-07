@@ -104,11 +104,9 @@ namespace MyFirstAPI.Migrations
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("Role")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Username");

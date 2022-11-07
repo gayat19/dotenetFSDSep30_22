@@ -312,3 +312,98 @@ VALUES (@p0, @p1, @p2, @p3, @p4);
 SET NOCOUNT ON;
 INSERT INTO [Users] ([Username], [Key], [PasswordHash], [Role], [Status])
 VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-11-02 10:19:16,697 [1] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-11-02 10:19:27,208 [1] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-11-02 10:20:02,328 [1] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-11-02 10:22:28,734 [1] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-11-02 10:22:30,704 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (262ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-11-02 10:22:30,983 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (259ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-11-02 10:22:31,217 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (232ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-11-02 10:22:31,662 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (238ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2022-11-02 10:22:31,896 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (232ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-11-02 10:22:32,134 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (237ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-11-02 10:22:32,378 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (240ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-11-02 10:22:32,411 [1] INFO Microsoft.EntityFrameworkCore.Migrations - Applying migration '20221102044917_init'.
+2022-11-02 10:22:32,976 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (234ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Departments] (
+    [Dep_Id] int NOT NULL IDENTITY,
+    [DepartmentName] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([Dep_Id])
+);
+2022-11-02 10:22:33,210 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (233ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Username] nvarchar(450) NOT NULL,
+    [PasswordHash] varbinary(max) NULL,
+    [Key] varbinary(max) NULL,
+    [Role] nvarchar(max) NULL,
+    [Status] nvarchar(max) NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Username])
+);
+2022-11-02 10:22:33,443 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (232ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Employees] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Salary] real NOT NULL,
+    [DepartmentId] int NOT NULL,
+    [Username] nvarchar(450) NULL,
+    CONSTRAINT [PK_Employees] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Employees_Departments_DepartmentId] FOREIGN KEY ([DepartmentId]) REFERENCES [Departments] ([Dep_Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employees_Users_Username] FOREIGN KEY ([Username]) REFERENCES [Users] ([Username])
+);
+2022-11-02 10:22:33,714 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (271ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Dep_Id', N'DepartmentName') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] ON;
+INSERT INTO [Departments] ([Dep_Id], [DepartmentName])
+VALUES (1, N'Admin');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Dep_Id', N'DepartmentName') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] OFF;
+2022-11-02 10:22:33,957 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (242ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'DepartmentId', N'Name', N'Salary', N'Username') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] ON;
+INSERT INTO [Employees] ([Id], [DepartmentId], [Name], [Salary], [Username])
+VALUES (101, 1, N'Ramu', CAST(12345.54 AS real), NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'DepartmentId', N'Name', N'Salary', N'Username') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] OFF;
+2022-11-02 10:22:34,723 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (238ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'DepartmentId', N'Name', N'Salary', N'Username') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] ON;
+INSERT INTO [Employees] ([Id], [DepartmentId], [Name], [Salary], [Username])
+VALUES (102, 1, N'Somu', CAST(34535.54 AS real), NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'DepartmentId', N'Name', N'Salary', N'Username') AND [object_id] = OBJECT_ID(N'[Employees]'))
+    SET IDENTITY_INSERT [Employees] OFF;
+2022-11-02 10:22:36,513 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (241ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_DepartmentId] ON [Employees] ([DepartmentId]);
+2022-11-02 10:22:36,746 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (232ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_Username] ON [Employees] ([Username]);
+2022-11-02 10:22:36,980 [1] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (234ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221102044917_init', N'6.0.10');
+2022-11-02 10:23:54,076 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2022-11-02 10:23:54,120 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2022-11-02 10:23:54,124 [1] INFO Microsoft.Hosting.Lifetime - Content root path: E:\Corp\Skillwise\Hexaware\30Sep2022\Day11\MyFirstAPI\MyFirstAPI\
+2022-11-02 10:24:35,114 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-11-02 10:24:38,654 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (410ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 8000) (DbType = Binary), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Username], [Key], [PasswordHash], [Role], [Status])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-11-02 10:25:17,698 [.NET ThreadPool Worker] INFO MyFirstAPI.Controllers.UserController - Login Hit
+2022-11-02 10:25:17,864 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 6.0.10 initialized 'CompanyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-11-02 10:25:19,556 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (265ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Users] AS [u]
+2022-11-02 10:25:19,969 [.NET ThreadPool Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (241ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Username], [u].[Key], [u].[PasswordHash], [u].[Role], [u].[Status]
+FROM [Users] AS [u]

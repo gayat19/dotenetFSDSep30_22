@@ -1,0 +1,10 @@
+Agility
+Availability
+Security
+Scalability
+Maintainable
+Optimal Cost
+
+-
+
+Server=tcp:g3server2nov.database.windows.net,1433;Initial Catalog=sample;Persist Security Info=False;User ID=gayathri;Password=P@ssw0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
